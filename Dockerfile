@@ -7,7 +7,7 @@ MAINTAINER "gauravkhandate@gmail.com"
 # Update lib and apllication uprade 
 RUN yum update -y && yum upgrade -y && yum install vim -y
 RUN yum install openssh-server -y && yum install fontconfig java-17-openjdk -y
-RUN systemctl start sshd
+
 # create folder create 
 RUN mkdir -p /opt/download
 RUN mkdir -p /opt/download/extract
