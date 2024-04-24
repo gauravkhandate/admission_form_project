@@ -31,5 +31,5 @@ ENV M2_HOME=/opt/download/extract/maven
 ENV PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
 
 # To Start the tomcat server 
-RUN ./opt/download/extract/tomcat/bin/startup.sh
+CMD ["/opt/download/extract/tomcat/bin/startup.sh", "run"]
 
