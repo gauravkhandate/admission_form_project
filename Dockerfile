@@ -17,7 +17,7 @@ RUN tar -zxf apache-tomcat-9.0.88.tar.gz
 RUN mv -f apache-tomcat-9.0.88/* /opt/download/extract/tomcat
 
 # Copy the war file on tomcat directory
-COPY target/admission_form.war /opt/download/extract/tomcat/webapps
+COPY target/adminssion_form.war /opt/download/extract/tomcat/webapps/
 
 # port export
 EXPOSE 8080/tcp
